@@ -1,0 +1,347 @@
+/*
+Theme Name: Résidence des Vignes
+Author:Moi
+Description: Voici ma résidence 
+Version: 1.0
+Text Domain: residencedesvignes
+*/
+
+body {
+    font-family: 'Bangers', cursive;
+    overflow-x: hidden;
+}
+
+
+/**************** ACCUEIL ********************/
+
+.titre-accueil {
+    min-height: 5vh;
+    font-size: xx-large;
+    padding: 10px 5px 5px 20px;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    background-color: white;
+}
+
+.image-accueil {
+    background-color: rgb(235, 218, 204);
+    min-height: 50vh;
+    padding: 0;
+    position: fixed;
+    top: 15vh;
+    z-index: 0;
+}
+
+.fond-blanc {
+    background-color: white;
+    padding-top: 55px;
+    margin-top: 800px;
+}
+
+.fond-blanc h2
+{
+    padding-top: 20px;
+}
+
+.white
+{
+    background-color: white;
+}
+
+.image-accueil img {
+    width: 100%;
+    height: 50vh;
+}
+
+.recherche label {
+    display: none;
+}
+
+.recherche {
+    position: fixed;
+    top: 50px;
+    right: 15px;
+    z-index: 101;
+    width: 100%;
+}
+
+.recherche input {
+    width: 250px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+/******************** MENU *****************************/
+
+.menu-navigation {
+    position: fixed;
+    right: 10px;
+    top: 80px;
+    z-index: 100;
+    width: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    /* display: flex;*/
+}
+
+ul li {
+    padding: 0 10px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+#navbarSupportedContent {
+    padding: 0;
+    margin-top: 15px;
+}
+
+nav {
+    height: 5vh;
+    padding: 25px;
+}
+
+.menu-menu-container {
+    padding-top: 10px;
+}
+
+.menu-menu-container li {
+    display: inline-block;
+    position: relative;
+}
+
+.menu-menu-container ul li a {
+    text-decoration: none;
+    padding: 10px;
+}
+
+.menu-menu-container ul li:hover .sub-menu {
+    display: block;
+}
+
+.sub-menu {
+    display: none;
+    position: absolute;
+    min-width: 176px;
+    z-index: 15;
+    padding: 0;
+    border-top: solid;
+    border-left: solid;
+    border-right: solid;
+}
+
+.sub-menu li {
+    border-bottom: 3px solid;
+    /*border-right: solid;*/
+    min-width: 170px;
+    padding: 5px;
+    background-color: white;
+}
+
+/* .sub-menu li a
+ sous menu 
+
+
+    color: red; 
+} */
+
+
+/*** MENU BURGER **/
+
+@media screen and (max-width: 1000px) {
+    nav #navbarSupportedContent #menu-menu {
+        background-color: darkgrey;
+        display: flex;
+        flex-direction: column;
+    }
+    nav #navbarSupportedContent #menu-menu ul {
+        margin-bottom: 100px;
+    }
+}
+
+
+/********************* PARTIE CENTRALE *************************/
+
+.entete {
+    margin-top: 70px;
+    margin-bottom: 10px;
+    min-height: 5vh;
+    /* background-color: aqua; */
+    position: relative;
+    z-index: 5;
+    padding-top: 7px;
+}
+
+.entete form label {
+    display: none;
+}
+
+.banentete img {
+    position: relative;
+    left: 50%;
+    margin-left: -1000px;
+    padding: 0;
+}
+
+
+/************************ BAS ************************/
+
+.page-droite {
+    min-height: 10vh;
+    border: solid;
+    padding: 5px 5px 5px 5px;
+    margin-top: 60px;
+
+}
+
+.page-droite .widgettitle {
+    margin-top: 0;
+    color: #007BFF;
+    padding: 10px 10px;
+}
+
+.page-droite ul {
+    padding-left: 10px;
+}
+
+.page-droite ul a {
+    padding-right: 0px;
+    font-size: 20px;
+}
+
+.bas-gauche {
+    background-color: rgb(27, 27, 27);
+    color: white;
+    min-height: 20vh;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    padding: 15px;
+}
+
+.textwidget {
+    padding-left: 20px;
+    padding-top: 20px;
+    font-style: italic;
+}
+
+.bas-droite {
+    background-color: rgb(27, 27, 27);
+    min-height: 10vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    padding-bottom: 10px;
+}
+
+.bas-droite a:hover {
+    text-decoration: none;
+    color: red;
+}
+
+.logotel img {
+    width: 30%;
+}
+
+.logotel p {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logodroite img {
+    width: 30%;
+}
+
+.anybasgauche {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.a2a_kit {
+    width: 100%;
+    display: flex !important;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#menu-menu-admin {
+    display: flex;
+    justify-content: space-around;
+}
+
+#menu-menu-admin a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.7vw;
+}
+
+#menu-menu-bas a {
+    color: white;
+    text-decoration: none;
+}
+
+#menu-menu-bas a:hover {
+    color: #007BFF;
+}
+
+
+/******************* CONTACT *********************/
+
+.container h2 {
+    padding-left: 10px;
+    margin-top: 50px;
+}
+
+.formulaire {
+    box-shadow: 15px 15px 10px black;
+    border: solid;
+    margin-bottom: 50px;
+    padding: 20px;
+}
+
+.formulaire label {
+    text-align: start;
+}
+
+.formulaire input,
+textarea {
+    width: 450px;
+}
+
+.formulaire p:nth-child(7) input {
+    border-radius: 7px;
+    width: 150px;
+    background-color: #343a40;
+    color: white
+}
+
+.tableau thead,
+.tableau tbody,
+.tableau tfoot {
+    font-style: normal;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+.dataTables_info,
+.dataTables_paginate,
+caption a,
+.dataTables_length {
+    display: none;
+}
+
+.elementor-widget-container
+{
+    visibility: visible;
+}

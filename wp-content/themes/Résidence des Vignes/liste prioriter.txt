@@ -1,0 +1,30 @@
+commencer par screenshot.png 
+
+allez recupere les fichier js et css sur bootstrap
+
+créer style.css
+
+créer header.php 
+
+créer footer.php
+
+créer index.php
+
+créer functions.php
+
+
+vous devez utilisez les extension suivante :
+
+- AddToAny
+- AdvancedCustomFields
+- Contact Form 7
+- Custom Post Type UI
+- Elementor
+- Shortcode Ultimate
+- Show Current Template
+- Widget Content Blocks
+- Widget CSS Classes
+- Widget Options
+
+
+
